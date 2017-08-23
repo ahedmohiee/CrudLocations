@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="FusionTest.jsf" id="d1">
+        <af:form id="f1">
+            <af:button text="button 1" id="b1" actionListener="#{viewScope.fusion.getEmployees}"/>
+            <af:table value="#{viewScope.fusion.personList}" var="row" rowBandingInterval="0" id="t1"
+                      partialTriggers="::b1">
+                
+            </af:table>
+        </af:form>
+    </af:document>
+</f:view>
